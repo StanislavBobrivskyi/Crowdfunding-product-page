@@ -9,6 +9,16 @@
   color: hsl(228, 45%, 44%);
 }
 
+body {
+  background-image: url(/src/images/image-hero-mobile.jpg);
+
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  background-size: contain;
+  box-sizing: border-box;
+}
+
 ul {
   list-style: none;
   padding: 0;
