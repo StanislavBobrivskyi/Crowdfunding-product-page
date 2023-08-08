@@ -8,3 +8,12 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
