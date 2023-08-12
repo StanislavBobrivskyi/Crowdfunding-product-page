@@ -10,11 +10,19 @@
 }
 
 body {
+  font-family: 'Commissioner', sans-serif;
   background-attachment: fixed;
   background-repeat: no-repeat;
 
   background-size: contain;
   box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+a,
+p {
+  font-family: 'Commissioner', sans-serif;
 }
 
 @media screen and (max-width: 1199px) {
