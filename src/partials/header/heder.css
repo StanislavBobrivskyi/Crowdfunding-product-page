@@ -7,6 +7,7 @@
 .header-section {
 }
 .header {
+  margin-bottom: 192px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -77,4 +78,42 @@
 .mobile-menu-item:nth-child(2) {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
+}
+
+.header-navigation {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url(/src/images/image-hero-desktop.jpg);
+  }
+
+  .container {
+    max-width: 1400px;
+    margin: auto;
+    /* max-width: 480px; */
+    padding: 0 160px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .header-navigation {
+    display: block;
+  }
+
+  .header-navigation {
+    display: flex;
+  }
+  .header-navigation-item:not(:last-child) {
+    margin-right: 33px;
+  }
+
+  .header-navigation-link {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+  }
 }

@@ -10,13 +10,17 @@
 }
 
 body {
-  background-image: url(/src/images/image-hero-mobile.jpg);
-
   background-attachment: fixed;
   background-repeat: no-repeat;
 
   background-size: contain;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 1199px) {
+  body {
+    background-image: url(/src/images/image-hero-mobile.jpg);
+  }
 }
 
 ul {

@@ -1,2 +1,105 @@
 .hero {
 }
+.container {
+}
+.hero-wrapper {
+  max-width: 327px;
+  margin: auto;
+  position: relative;
+  padding: 52px 24px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.hero-svg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-title {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.hero-description {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.hero-btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 9px;
+}
+.btn-back {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #3cb3ab;
+  border-radius: 33px;
+  padding: 19px 24px;
+  border: none;
+}
+
+.btn-back:hover {
+  background-color: #147a73;
+}
+.btn-bookmaker-descktop {
+  display: none;
+}
+
+.btn-bookmaker {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.btn-bookmaker:hover .icon-background {
+  fill: #147a73;
+}
+
+.btn-bookmaker:hover .icon-color {
+  fill: white;
+}
+@media screen and (min-width: 1200px) {
+  .hero-wrapper {
+    max-width: 730px;
+    padding: 56px 48px 48px;
+  }
+  .hero-description {
+    margin-bottom: 38px;
+  }
+
+  .btn-back {
+    margin-right: 256px;
+  }
+  .btn-bookmaker {
+    display: none;
+  }
+  .btn-bookmaker-descktop {
+    padding: 0 24px 0 0;
+    display: block;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #7a7a7a;
+    background-color: #b1b1b1;
+    gap: 16px;
+    border-radius: 33px;
+    border: none;
+  }
+  .btn-bookmaker-descktop:hover {
+    color: #147a73;
+    background-color: #92e9e3;
+  }
+  .btn-bookmaker-descktop:hover .icon-background {
+    fill: #147a73;
+  }
+
+  .btn-bookmaker-descktop:hover .icon-color {
+    fill: white;
+  }
+}
