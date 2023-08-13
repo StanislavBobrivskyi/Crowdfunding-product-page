@@ -3,7 +3,7 @@
 .container {
 }
 .hero-wrapper {
-  max-width: 327px;
+  /* max-width: 327px; */
   margin: auto;
   position: relative;
   padding: 52px 24px 40px;
