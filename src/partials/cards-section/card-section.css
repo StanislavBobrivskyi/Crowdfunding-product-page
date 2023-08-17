@@ -13,7 +13,7 @@
 .card-title {
   color: #000;
   text-align: left;
-  font-family: Commissioner;
+
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -21,25 +21,111 @@
 }
 .card-section-description {
   color: #7a7a7a;
-  font-family: Commissioner;
+
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
 }
 .card-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
 }
 .card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: #fff;
 }
 .list-title {
+  margin-bottom: 8px;
+  color: #000;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 .list-green {
+  margin-bottom: 24px;
+  color: #3cb3ab;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 .list-description {
+  margin-bottom: 24px;
+  color: #7a7a7a;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
+
+.span-wrapper {
+  margin-bottom: 24px;
+}
+
 .list-number-left {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 .list-text-left {
+  color: #7a7a7a;
+
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .list-btn {
+  padding: 15px 32px;
+  color: #fff;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  border: none;
+  border-radius: 33.5px;
+  background: #3cb3ab;
+}
+
+@media screen and (min-width: 1200px) {
+  .card-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .card-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .list-title {
+    align-self: flex-start;
+  }
+  .list-green {
+    align-self: flex-end;
+  }
+  .list-description {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .span-wrapper {
+    align-self: flex-start;
+  }
+
+  .list-btn {
+    align-self: flex-end;
+  }
 }
