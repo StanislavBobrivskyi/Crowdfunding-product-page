@@ -1,0 +1,45 @@
+.container {
+}
+.card-wrapper {
+  background-color: #fff;
+  border-radius: 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 24px 40px;
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+.card-title {
+  color: #000;
+  text-align: left;
+  font-family: Commissioner;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.card-section-description {
+  color: #7a7a7a;
+  font-family: Commissioner;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.card-list {
+}
+.card-item {
+}
+.list-title {
+}
+.list-green {
+}
+.list-description {
+}
+.list-number-left {
+}
+.list-text-left {
+}
+.list-btn {
+}

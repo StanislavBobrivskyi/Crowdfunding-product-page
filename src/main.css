@@ -1,7 +1,7 @@
 @import './partials/header/heder.css';
 @import './partials/hero/hero.css';
 @import './partials/dashboard/dashboard.css';
-
+@import './partials/cards-section/card-section.css';
 .attribution {
   font-size: 11px;
   text-align: center;
