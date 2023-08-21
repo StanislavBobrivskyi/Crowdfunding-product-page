@@ -1,0 +1,2 @@
+const e=document.querySelector(".menu"),t=document.querySelector("#mobileMenu"),s=document.querySelector(".mobile-menu-overlay"),i=document.body;e.addEventListener("click",(function(){t.classList.toggle("is-hidden"),s.classList.toggle("is-hidden"),i.classList.toggle("overflow-hidden")})),s.addEventListener("click",(function(n){t.contains(n.target)||e.contains(n.target)||(t.classList.add("is-hidden"),s.classList.add("is-hidden"),i.classList.remove("overflow-hidden"))}));
+//# sourceMappingURL=index.d5881450.js.map
