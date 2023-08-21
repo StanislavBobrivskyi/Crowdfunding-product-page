@@ -20,6 +20,10 @@ body {
   background-size: contain;
   box-sizing: border-box;
 }
+
+.overflow-hidden {
+  overflow: hidden;
+}
 h1,
 h2,
 h3,
