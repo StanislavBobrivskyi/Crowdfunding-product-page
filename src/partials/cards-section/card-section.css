@@ -101,31 +101,43 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .card-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
+  /* CSS */
+
   .card-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 634px;
+    height: 248px;
+    position: relative;
   }
+
   .list-title {
-    align-self: flex-start;
+    position: absolute;
+    top: 38px;
+    left: 32px;
+    margin: 0;
   }
+
   .list-green {
-    align-self: flex-end;
+    position: absolute;
+    top: 40px;
+    right: 32px;
+    margin: 0;
   }
+
   .list-description {
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto;
+    text-align: center;
   }
+
   .span-wrapper {
-    align-self: flex-start;
+    position: absolute;
+    bottom: 36px;
+    left: 32px;
   }
 
   .list-btn {
-    align-self: flex-end;
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+    margin-top: 10px;
   }
 }
