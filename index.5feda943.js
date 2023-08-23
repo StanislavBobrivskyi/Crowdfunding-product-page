@@ -1,2 +1,0 @@
-!function(){var e=document.querySelector(".menu"),t=document.querySelector("#mobileMenu"),i=document.querySelector(".mobile-menu-overlay"),n=document.body;e.addEventListener("click",(function(){t.classList.toggle("is-hidden"),i.classList.toggle("is-hidden"),n.classList.toggle("overflow-hidden")})),i.addEventListener("click",(function(s){t.contains(s.target)||e.contains(s.target)||(t.classList.add("is-hidden"),i.classList.add("is-hidden"),n.classList.remove("overflow-hidden"))}))}();
-//# sourceMappingURL=index.5feda943.js.map
