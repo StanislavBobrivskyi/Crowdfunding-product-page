@@ -99,6 +99,9 @@
   border-radius: 33.5px;
   background: #3cb3ab;
 }
+.list-btn:hover {
+  background-color: #147a73;
+}
 
 @media screen and (min-width: 1200px) {
   /* CSS */
@@ -130,7 +133,8 @@
 
   .span-wrapper {
     position: absolute;
-    bottom: 36px;
+    margin-bottom: 0;
+    bottom: 32px;
     left: 32px;
   }
 
