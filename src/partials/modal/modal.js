@@ -5,6 +5,9 @@ const modalMenuOverlay = document.querySelector('.modal-menu-overlay');
 
 const checkbox = document.getElementById('checkbox');
 const additionalWindow = document.getElementById('additionalWindow');
+const successModal = document.getElementById('my-success-Modal');
+const continueBtn = document.getElementById('continue');
+const successClose = document.getElementById('success_close');
 
 modalOpen.addEventListener('click', onClick);
 modalClose.addEventListener('click', onClose);
@@ -37,3 +40,21 @@ checkbox.addEventListener('change', () => {
     additionalWindow.style.display = 'none';
   }
 });
+
+continueBtn.addEventListener('click', onSuccess);
+
+function onSuccess() {
+  successModal.classList.remove('is-hidden');
+  modal.classList.add('is-hidden');
+  setTimeout(() => {
+    location.reload(); // Перезавантажити сторінку
+  }, 3000);
+}
+
+successClose.addEventListener('click', onSuccessClose);
+
+function onSuccessClose() {
+  successModal.classList.add('is-hidden');
+  modalMenuOverlay.classList.add('is-hidden');
+  location.reload();
+}
