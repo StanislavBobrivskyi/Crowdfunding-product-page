@@ -4,6 +4,6 @@
 <circle cx="12" cy="12" r="12" fill="white"/>
 <circle cx="12" cy="12" r="11.5" stroke="black" stroke-opacity="0.15"/>
 </g>
-<circle id="Oval_2" cx="12" cy="12" r="6" fill="#3CB3AB"/>
+<circle id="Oval_2" opacity="0.01" cx="12" cy="12" r="6" fill="#3CB3AB"/>
 </g>
 </svg>

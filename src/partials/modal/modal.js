@@ -3,6 +3,9 @@ const modalOpen = document.getElementById('openModalButton');
 const modalClose = document.getElementById('closeModalButton');
 const modalMenuOverlay = document.querySelector('.modal-menu-overlay');
 
+const checkbox = document.getElementById('checkbox');
+const additionalWindow = document.getElementById('additionalWindow');
+
 modalOpen.addEventListener('click', onClick);
 modalClose.addEventListener('click', onClose);
 modalMenuOverlay.addEventListener('click', onCloseOutside);
@@ -26,3 +29,11 @@ function onCloseOutside(event) {
     modalMenuOverlay.classList.add('is-hidden');
   }
 }
+
+checkbox.addEventListener('change', () => {
+  if (checkbox.checked) {
+    additionalWindow.style.display = 'block';
+  } else {
+    additionalWindow.style.display = 'none';
+  }
+});
