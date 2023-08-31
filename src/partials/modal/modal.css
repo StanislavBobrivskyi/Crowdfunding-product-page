@@ -70,6 +70,9 @@
   content: url('/src/images/icon-check.svg');
 }
 
+.border-style:hover {
+  border-color: #3cb3ab;
+}
 /* .custom-checkbox input:checked ~ .checkmark::after {
   content: url('/src/images/icon-check.svg');
 } */
@@ -80,6 +83,12 @@
 .list-title1 {
   margin-top: 12px;
   margin-bottom: 36px;
+}
+.list-title {
+  margin-left: 64px;
+}
+.list-green {
+  margin-left: 64px;
 }
 
 /* additional window  */
@@ -214,4 +223,59 @@
 
 .success-btn:hover {
   background-color: #147a73;
+}
+
+.cl-btn-6 {
+  width: 24px;
+  cursor: pointer;
+  margin-left: auto;
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+.cl-btn-6-in {
+  width: inherit;
+  text-align: center;
+}
+.cl-btn-6-txt {
+  font-size: 5px;
+  line-height: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #898b8e;
+  transition: all 0.3s ease-in;
+  opacity: 0;
+  cursor: pointer;
+  font-family: Verdana;
+}
+.cl-btn-6-in:before,
+.cl-btn-6-in:after {
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: inherit;
+  background: #636669;
+  left: 0;
+  transition: all 0.3s ease-in;
+}
+.cl-btn-6-in:before {
+  top: calc(50% - 4px);
+  transform: rotate(45deg);
+}
+.cl-btn-6-in:after {
+  bottom: 50%;
+  transform: rotate(-45deg);
+}
+.cl-btn-6:hover .cl-btn-6-txt {
+  opacity: 1;
+}
+.cl-btn-6:hover .cl-btn-6-in:before,
+.cl-btn-6:hover .cl-btn-6-in:after {
+  transform: rotate(0);
+}
+.cl-btn-6:hover .cl-btn-6-in:before {
+  top: 0;
+}
+.cl-btn-6:hover .cl-btn-6-in:after {
+  bottom: 0;
 }
