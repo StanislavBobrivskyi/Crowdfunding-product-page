@@ -21,15 +21,6 @@
 .modal-open {
   overflow: hidden; /* Заборонити прокрутку */
 }
-.micromodal-slide {
-}
-.modal__overlay {
-}
-
-.modal__btn {
-}
-.modal__btn-primary {
-}
 
 .modal-menu-overlay {
   position: fixed;
