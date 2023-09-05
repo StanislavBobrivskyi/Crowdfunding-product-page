@@ -1,5 +1,8 @@
 const modal = document.querySelector('.modal');
 const modalOpen = document.getElementById('openModalButton');
+const modalOpen1 = document.getElementById('openModalButton1');
+const modalOpen2 = document.getElementById('openModalButton2');
+const modalOpen3 = document.getElementById('openModalButton3');
 const modalClose = document.getElementById('closeModalButton');
 const modalMenuOverlay = document.querySelector('.modal-menu-overlay');
 
@@ -20,10 +23,15 @@ const successClose = document.getElementById('success_close');
 const borderItem = document.querySelector('.card-item');
 
 modalOpen.addEventListener('click', onClick);
+modalOpen1.addEventListener('click', onClick);
+modalOpen2.addEventListener('click', onClick);
+modalOpen3.addEventListener('click', onClick);
 modalClose.addEventListener('click', onClose);
 modalMenuOverlay.addEventListener('click', onCloseOutside);
 
 function onClick() {
+  window.scrollTo(0, 0);
+
   document.body.classList.add('modal-open');
   modalMenuOverlay.classList.remove('is-hidden');
   modal.classList.remove('is-hidden');
